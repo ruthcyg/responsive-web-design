@@ -3,21 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/00d926e297.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
+
+  <!---500px or smaller-->
+
+  <link rel="stylesheet" 
+  media="screen and (max-width:500px)"
+   href="zover500.css">
+   
+    <!------600 or smaller------>
+    <link rel="stylesheet"
+    media="screen and (max-width:600px)"
+     href="zover600.css"/>
+    <!------------------- 800 or smaller------------------>
+   <link rel="stylesheet" 
+   media="screen and (max-width:800px)"
+    href="zover800.css"/>
+
+    <!--------------over 900px----------------------------------------->
+    <link rel="stylesheet" 
+    media="screen and (min-width:900px)"
+     href="zover900.css"/>
 
     <!--this is onr way one of applying media query to a big website and this can overide the css
     file-->
     <!--link rel="stylesheet" 
     media="screen and ( min-width:400px)" 
     href="over400.css"/>-->
-
-
-    <title>Viewport Units</title>
+  
+    <title>Media Queries</title>
   </head>
   <body>
-    <!-- <img src="kitty cat.jpg" alt="cat" /> 
-   <img src="ducklings.jpg"  alt="duck"/>
-    <img src="kitty cat.jpg" alt="cat" />-->
-    
+<section id="weather">
+  <h1>Indian Pune</h1>
+  <div class="weather__info__temp">
+    <!--Weather Information-->
+    <div class="weather__info">
+      <div class="weather__info--date">  
+        <p>Monday, Mar 21</p> 
+        <p>Sunny</p>
+        <div class="weather__info--date__icon__temp">
+          <i class="fas fa-sun"></i>
+          <p>24 <sup> &#8451;</sup></p>
+        </div>
+      </div>
+      <div class="weather__info--data">
+<p>Percipitation :10%</p>
+<p> Humidity:5%</p>
+<p>Wind :4 kpm NW</p>
+      </div>
+   
+    </div>
+
+ <!--Weather Temps-->
+ <div class="weather__temp">
+  <div class="weather__temp--monday">
+    <p>Monday</p>
+    <i class="fas fa-cloud-sun"></i>
+    <p>23 <sup>&#8451;</sup></p>
+    <p>18 <sup>&#8451;</sup></p>
+  </div>
+  <div class="weather__temp--tuesday">
+    <p>Tuesday</p>
+    <i class="fas fa-sun"></i>
+    <p>26 <sup>&#8451;</sup></p>
+    <p>21 <sup>&#8451;</sup></p>
+  </div>
+  <div class="weather__temp--wednesday">
+    <p>Wednesday</p>
+    <i class="fas fa-wind"></i>
+    <p>20 <sup>&#8451;</sup></p>
+    <p>16 <sup>&#8451;</sup></p>
+  </div>
+  <div class="weather__temp--thursday">
+    <p>Thursday</p>
+    <i class="fas fa-cloud-sun-rain"></i>
+    <p>18 <sup>&#8451;</sup></p>
+    <p>16 <sup>&#8451;</sup></p>
+  </div>
+  <div class="weather__temp--friday">
+    <p>Friday</p>
+    <i class="fas fa-cloud-showers-heavy"></i>
+    <p>15 <sup>&#8451;</sup></p>
+    <p>11 <sup>&#8451;</sup></p>
+  </div>
+  <div class="weather__temp--saturday">
+    <p>Saturday</p>
+    <i class="fas fa-cloud-sun"></i>
+    <p>14 <sup>&#8451;</sup></p>
+    <p>10 <sup>&#8451;</sup></p>
+  </div>
+  <div class="weather__temp--sunday">
+    <p>Sunday</p>
+    <i class="fas fa-cloud-meatball"></i>
+    <p>23 <sup>&#8451;</sup></p>
+    <p>18 <sup>&#8451;</sup></p>
+  </div>
+</div>
+  </div>
+</section>
+
+  
   </body>
 </html>

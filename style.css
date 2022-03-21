@@ -19,6 +19,7 @@ img:last-of-type{
 }
 */
 /** media query for small website*/
+/*
 @media screen and (max-width:400px) {
     body{
         
@@ -37,5 +38,86 @@ img:last-of-type{
         background-color: darkred;
     }
 }
+
+*/
+
+/* Weather Website*/
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*******************************   UTILITY COMPONENTS ********************************************/
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-color:#0f9b8e;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Paragraphs*/
+
+p{
+    font-size: 2rem;
+    margin:0.5rem 0;
+}
+
+/* Icons*/
+i{
+    font-size: 5rem;
+}
+
+/*  Suprescript Elements*/
+sup{
+    font-size: 0.8rem;
+}
+
+/* changing the color when  highlighting */
+::selection{
+    color:#fcc006;
+    background-color: #ff7052;
+}
+
+/******************************Main Styling********************************** */
+
+/*Section => container of them all */
+section#weather{
+    margin:2rem auto 0;
+}
+
+/* Main Heading */
+h1{
+    text-align:center;
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    font-weight: 300;
+}
+
+/* Weather Info -- Temp Container */
+div.weather__info__temp{
+    padding: 4rem;
+}
+
+/* Weather Info*/
+div.weather__info{
+   display: flex; 
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 5rem 0 ;
+}
+
+/* Weather Temp Container */
+div.weather__temp{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 
