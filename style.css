@@ -18,7 +18,7 @@ img:last-of-type{
     width:50vmin
 }
 */
-/** media query for small website*/
+/** media query for small website
 @media screen and (max-width:400px) {
     body{
         
@@ -38,4 +38,77 @@ img:last-of-type{
     }
 }
 
+*/ 
+/* : root => html => replace px with rem */
 
+/*
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-size:3vw*/
+
+
+    /* for smaller screen sizes*/
+    
+    /*font-size:calc(15px + 2vw); px is not dynamic 
+
+    font-size: calc(1.4rem + 2vw);
+}
+
+
+/* For Larger Screens Size 
+
+@media screen and (max-height:1500px){
+    h1{
+        font-size: 4.5rem;
+    }
+}*/
+
+*{
+    padding: 0;
+    margin:0
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    background-color:indigo;
+    color: white;
+    /* full Screen*/
+
+    height: 100vh;
+    /* Optional Styles*/ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Optional Styles*/
+h1{
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+p{
+    font-size: 18px;
+}
+a{
+    color:white;
+    text-decoration: none;
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 12px 24px;
+    margin-top: 40px;
+    transition: all 0.35s ease-in-out;
+}
+
+a:hover{
+    color: brown;
+    background-color: white;
+}
