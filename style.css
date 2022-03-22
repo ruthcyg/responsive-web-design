@@ -1,41 +1,29 @@
-/* Viewport width => vw --- Viewport Height => vh*/
+header{
+    background-color: rgb(227,232,238);
+    padding: 5vh 5vw;
 
-/*
-img{
-width: 50vw;
-height: 50vh;
-border: lightslategray 0.2rem solid;
-/*object-fit: cover; this is better but contain has it place*/
-/*object-fit: contain; 
-}
-*/
-/*
-img:first-of-type{
-    width:50vmax
-}
+    /******* Top Border   *********/
 
-img:last-of-type{
-    width:50vmin
-}
-*/
-/** media query for small website*/
-@media screen and (max-width:400px) {
-    body{
-        
-        background-color:lawngreen;
-    }
-}
-
-@media screen and (min-width:401px){
-    body{
-        background-color: blueviolet;
-    }
-}
-
-@media screen and (min-width:600px){
-    body{
-        background-color: darkred;
-    }
-}
+ /*   border-top:5px solid lightslategray;*/
 
 
+    /* making the border more dynamic and responsive  => 
+     vw => [(Pixel Value / Viewport Width) *100]*/
+
+   /*  border-top: 0.3333vw solid lightslategray;*/
+
+   /* Taking one step further => to make sure it does
+    get very small on mobile devices */ 
+
+
+    border-top:calc(2px + 0.186vw) solid lightslategray;
+
+
+
+}
+
+a{
+    text-decoration: none;
+    color:#444;
+    margin: 0 2vw;
+}
